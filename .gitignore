@@ -1,0 +1,14 @@
+\.venv/
+analytics_project/outputs/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.sqlite
+*.db
+/.mypy_cache/
+.pytest_cache/
+env/
+venv/
+*.egg-info/
+dist/
+build/
