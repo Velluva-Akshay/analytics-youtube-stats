@@ -1,5 +1,6 @@
 \.venv/
 analytics_project/outputs/
+analytics_project/*.log
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
@@ -12,3 +13,9 @@ venv/
 *.egg-info/
 dist/
 build/
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/

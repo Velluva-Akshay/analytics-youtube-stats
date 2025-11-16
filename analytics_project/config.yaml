@@ -1,0 +1,50 @@
+# YouTube Analytics Configuration
+
+# Data settings
+data:
+  csv_path: "../Global YouTube Statistics.csv"
+  encoding: "utf-8"
+  fallback_encoding: "latin-1"
+
+# Output settings
+output:
+  base_dir: "outputs"
+  format: "png"  # png, svg, pdf
+  dpi: 300
+  create_subdirs: true
+
+# Visualization settings
+visualization:
+  style: "seaborn-v0_8-darkgrid"
+  figure_size: [12, 6]
+  font_size: 10
+  color_palette: "husl"
+  save_transparent: false
+
+# Analysis settings
+analysis:
+  top_n: 20
+  outlier_method: "iqr"  # iqr or zscore
+  missing_threshold: 0.5
+  correlation_threshold: 0.7
+
+# Logging settings
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "analytics.log"
+
+# Feature columns
+columns:
+  required:
+    - "Youtuber"
+    - "subscribers"
+    - "video views"
+  numeric:
+    - "subscribers"
+    - "video views"
+    - "uploads"
+  categorical:
+    - "category"
+    - "Country"
+    - "channel_type"

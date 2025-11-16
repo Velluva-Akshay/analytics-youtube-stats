@@ -4,3 +4,6 @@ seaborn
 jupyter
 notebook
 openpyxl
+pyyaml
+pytest
+numpy
